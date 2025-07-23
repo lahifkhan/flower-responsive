@@ -43,7 +43,9 @@ img {
 .banner-container,
 .plant-lover-container,
 .plant-lover-right ul,
-.box-4 {
+.box-4,
+.bottom-container,
+.link-container {
   display: flex;
 }
 .our-plant-top p,
@@ -280,12 +282,10 @@ img {
   background-color: rgba(255, 255, 255, 0.5);
 }
 .bottom-container {
-  display: flex;
   gap: 90px;
   background-color: white;
 }
 .link-container {
-  display: flex;
   flex-direction: column;
   gap: 32px;
 }

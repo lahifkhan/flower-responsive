@@ -41,11 +41,17 @@ img{
 }
 .nav-container,
 .nav-right ul,
-.banner-container{
+.banner-container,
+.plant-lover-container,
+.plant-lover-right ul{
     display: flex;
 }
+.section-tittle{
+    font-size: 4rem;
 
-.section-description{
+}
+
+.section-subtittle{
     font-size: 3rem;
     font-weight: 700;
 }
@@ -100,17 +106,14 @@ img{
 .banner-right{
     flex: 1;
 }
-.banner-tittle{
-    font-size: 4rem;
 
-}
 
 
 
 /* our plant style */
 .our-plant-container{
     text-align: center;
-   
+   margin-bottom: 200px;
 }
 
 .our-plant-top p{
@@ -141,14 +144,51 @@ img{
 }
 
 
+/* plant lover styles */
+
+.plant-lover-container{
+    
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.plant-lover-left{
+    flex: 1;
+    position: relative;
+}
+
+.plant-lover-right{
+    flex: 1;
+}
+
+
+.plant-lover-right ul{
+    flex-direction: column;
+    gap: 20px;
+}
+.plant-lover-right h2{
+    margin-bottom: 20px;
+}
+
+.trusted-badge{
+    position: absolute;
+  top: -120px; 
+  right: -100px; 
+  width: 286px;
+  
+  z-index: 10; 
+}
+
+
 
 /* responsive for mobile */
 @media screen and (max-width:576px) {
 
-    /* header responsive */
+  
     .nav-container,
     .banner-left,
-    .our-plant-bottom{
+    .our-plant-bottom,
+    .plant-lover-container{
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -159,11 +199,20 @@ img{
         padding: 19px 30px;
         
     }
+    
+    .section-tittle{
+        font-size: 2rem;
+    }
+  
+
+
 
     /* banner section responsive */
-    .banner-container{
+    .banner-container
+    {
         flex-direction: column-reverse;
     }
+
     
 
 
@@ -176,6 +225,15 @@ img{
         grid-template-columns: repeat(2,1fr);
     }
     
+
+    /* plant lover section responsive */
+    .plant-lover-container{
+        flex-direction: column;
+    }
+    .plant-lover-right ul {
+        padding-left: 20px;
+        
+    }
     
     
 }

@@ -46,6 +46,13 @@ img{
 .plant-lover-right ul{
     display: flex;
 }
+.our-plant-top p,
+.latest-deals-top p{
+    padding:0px 126px;
+    margin-top: 16px;
+}
+
+
 .section-tittle{
     font-size: 4rem;
 
@@ -116,10 +123,7 @@ img{
    margin-bottom: 200px;
 }
 
-.our-plant-top p{
-    padding:0px 126px;
-    margin-top: 16px;
-}
+
 .our-plant-bottom{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -179,6 +183,76 @@ img{
   z-index: 10; 
 }
 
+/* latest deals section styles */
+
+.latest-deals{
+    text-align: center;
+   
+    margin-bottom: 120px;
+}
+.latest-deals-top{
+    margin-bottom: 90px;
+    margin-top: 120px;
+}
+.latest-deals-bottom{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "bloom zabo zabo"
+    "ana zabo zabo";
+    row-gap: 20px;
+    column-gap: 28px;
+    color: white;
+    
+}
+
+.bloom-plant,
+.ana-plant,
+.zabo-plant{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+     background-size: cover;
+    
+}
+.bloom-plant,
+.ana-plant{
+     height: 206px;
+      background-repeat: no-repeat;
+     
+}
+
+
+.bloom-plant{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.4)), url(../assets/deal-bloom.png);
+    grid-area: bloom;
+    
+}
+.ana-plant{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.4)), url(../assets/deal-ana.png);
+    grid-area: ana;
+    
+}
+.zabo-plant{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.4)), url(../assets/deal-zabo.png);
+    grid-area: zabo;
+    background-repeat: no-repeat;
+    
+   
+    
+}
+
+.discount{
+    font-size: 20px;
+}
+.shop-now-btn{
+    background: transparent;
+    text-decoration: underline;
+    border: none;
+    color: white;
+}
+
 
 
 /* responsive for mobile */
@@ -188,7 +262,8 @@ img{
     .nav-container,
     .banner-left,
     .our-plant-bottom,
-    .plant-lover-container{
+    .plant-lover-container,
+    .latest-deals-bottom{
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -217,7 +292,8 @@ img{
 
 
     /* main section responsive */
-    .our-plant-top p{
+    .our-plant-top p,
+    .latest-deals-top p {
         padding-left: 28px;
         padding-right: 28px;
     }
@@ -234,6 +310,26 @@ img{
         padding-left: 20px;
         
     }
+
+    /* latest deals section responsive */
+
+    .latest-deals-bottom{
+   
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+    "bloom"
+    "ana"
+    "zabo";
+ 
+    
+}
+.bloom-plant,
+.ana-plant,
+.zabo-plant{
+   height: 206px;
+    
+}
+
     
     
 }

@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.primary-font{
+    font-family: "Noto Serif", serif;
+}
+
+.mx-width{
+    max-width: 1140px;
+    margin: 0px auto;
+}

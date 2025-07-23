@@ -13,6 +13,13 @@
 .primary-font{
     font-family: "Noto Serif", serif;
 }
+.primary-button {
+   background-color: rgb(233, 90, 8);
+   padding: 19px 50px;
+   border: none;
+   color: white;
+   font-weight: 600;
+}
 
 .mx-width{
     max-width: 1140px;
@@ -20,6 +27,10 @@
 }
 
 /* common styles */
+img{
+    width: 100%;
+
+}
 
 .primary-color{
     color: rgba(233, 90, 8, 1);
@@ -32,6 +43,11 @@
 .nav-right ul,
 .banner-container{
     display: flex;
+}
+
+.section-description{
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 
@@ -89,9 +105,39 @@
 
 }
 
-.banner-right img{
+
+
+/* our plant style */
+.our-plant-container{
+    text-align: center;
+   
+}
+
+.our-plant-top p{
+    padding:0px 126px;
+    margin-top: 16px;
+}
+.our-plant-bottom{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+     margin-top: 49px;
+}
+.card button{
     width: 100%;
 
+}
+.flower-name,
+.flower-price{
+    font-size: 1.37rem;
+    font-weight: 500;
+    color: rgb(17, 17, 17);
+}
+.flower-price{
+   font-weight: 700;
+   margin-top: 36px;
+   margin-bottom: 30px;
 }
 
 
@@ -101,17 +147,33 @@
 
     /* header responsive */
     .nav-container,
-    .banner-left{
+    .banner-left,
+    .our-plant-bottom{
         padding-left: 16px;
         padding-right: 16px;
     }
     .mobile{
         display: none;
     }
+    .primary-button{
+        padding: 19px 30px;
+        
+    }
 
     /* banner section responsive */
     .banner-container{
         flex-direction: column-reverse;
+    }
+    
+
+
+    /* main section responsive */
+    .our-plant-top p{
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+    .our-plant-bottom{
+        grid-template-columns: repeat(2,1fr);
     }
     
     
